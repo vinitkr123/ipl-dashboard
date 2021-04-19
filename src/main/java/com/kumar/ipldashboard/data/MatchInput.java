@@ -11,7 +11,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class MatchInput {
-
+                            
     private String id;
     private String date;
     private String city;

@@ -2,6 +2,8 @@ package com.kumar.ipldashboard.model;
 
 import lombok.*;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
 import java.time.LocalDate;
 
 @Getter
@@ -11,8 +13,10 @@ import java.time.LocalDate;
 @ToString
 @NoArgsConstructor
 @AllArgsConstructor
+@Entity
 public class Match {
 
+    @Id
     private Long id;
     private LocalDate date;
     private String city;
