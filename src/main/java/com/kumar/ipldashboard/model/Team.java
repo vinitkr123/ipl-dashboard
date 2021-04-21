@@ -2,13 +2,15 @@ package com.kumar.ipldashboard.model;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Getter@Setter@AllArgsConstructor@NoArgsConstructor@Data@Builder@ToString
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Data@Builder@ToString
 public class Team {
 
     @Id
@@ -17,4 +19,7 @@ public class Team {
     private String teamName;
     private long totalMatches;
     private long totalWins;
+
+    @Transient
+    private List<Match> matches;
 }
