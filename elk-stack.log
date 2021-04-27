@@ -1,0 +1,433 @@
+2021-04-20 22:10:47.075  INFO 13764 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 13764 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:10:47.086  INFO 13764 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:10:47.170  INFO 13764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:10:47.171  INFO 13764 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:10:47.817  INFO 13764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:10:47.831  INFO 13764 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:10:48.308  INFO 13764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:10:48.316  INFO 13764 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:10:48.317  INFO 13764 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:10:48.424  INFO 13764 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:10:48.424  INFO 13764 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1252 ms
+2021-04-20 22:10:48.558  INFO 13764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:10:48.736  INFO 13764 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:10:48.739  INFO 13764 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:10:48.780  INFO 13764 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:10:48.827  INFO 13764 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:10:48.927  INFO 13764 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:10:49.044  INFO 13764 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:10:49.447  INFO 13764 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:10:49.456  INFO 13764 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:10:49.493  INFO 13764 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:10:49.653  WARN 13764 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:10:49.742  INFO 13764 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:10:49.868  WARN 13764 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:10:49.870  INFO 13764 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:10:49.884  INFO 13764 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:10:49.957  INFO 13764 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:10:49.970  INFO 13764 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 3.772 seconds (JVM running for 6.236)
+2021-04-20 22:10:49.972  INFO 13764 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:10:50.066  INFO 13764 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:10:50.094  INFO 13764 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:10:50.561  INFO 13764 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 451ms
+2021-04-20 22:10:50.566  INFO 13764 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:10:50.859  INFO 13764 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 484ms
+2021-04-20 22:11:48.520  INFO 13588 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 13588 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:11:48.536  INFO 13588 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:11:48.567  INFO 13588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:11:48.567  INFO 13588 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:11:49.077  INFO 13588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:11:49.086  INFO 13588 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:11:49.431  INFO 13588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:11:49.431  INFO 13588 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:11:49.431  INFO 13588 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:11:49.541  INFO 13588 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:11:49.541  INFO 13588 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
+2021-04-20 22:11:49.635  INFO 13588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:11:49.808  INFO 13588 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:11:49.808  INFO 13588 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:11:49.839  INFO 13588 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:11:49.887  INFO 13588 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:11:49.981  INFO 13588 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:11:50.059  INFO 13588 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:11:50.437  INFO 13588 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:11:50.453  INFO 13588 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:11:50.484  INFO 13588 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:11:50.625  WARN 13588 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:11:50.720  INFO 13588 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:11:50.845  WARN 13588 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:11:50.845  INFO 13588 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:11:50.845  INFO 13588 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:11:50.908  INFO 13588 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:11:50.924  INFO 13588 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 2.682 seconds (JVM running for 3.458)
+2021-04-20 22:11:50.924  INFO 13588 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:11:51.002  INFO 13588 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:11:51.034  INFO 13588 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:11:51.394  INFO 13588 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 360ms
+2021-04-20 22:11:51.410  INFO 13588 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:11:51.535  INFO 13588 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 376ms
+2021-04-20 22:12:59.988  INFO 12060 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 12060 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:12:59.988  INFO 12060 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:13:00.035  INFO 12060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:13:00.035  INFO 12060 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:13:00.533  INFO 12060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:13:00.549  INFO 12060 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:13:01.053  INFO 12060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:13:01.060  INFO 12060 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:13:01.061  INFO 12060 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:13:01.135  INFO 12060 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:13:01.135  INFO 12060 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1100 ms
+2021-04-20 22:13:01.259  INFO 12060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:13:01.463  INFO 12060 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:13:01.464  INFO 12060 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:13:01.505  INFO 12060 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:13:01.541  INFO 12060 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:13:01.633  INFO 12060 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:13:01.716  INFO 12060 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:13:02.154  INFO 12060 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:13:02.164  INFO 12060 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:13:02.226  INFO 12060 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:13:02.399  WARN 12060 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:13:02.495  INFO 12060 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:13:02.660  WARN 12060 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:13:02.663  INFO 12060 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:13:02.680  INFO 12060 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:13:02.785  INFO 12060 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:13:02.785  INFO 12060 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 3.088 seconds (JVM running for 3.888)
+2021-04-20 22:13:02.785  INFO 12060 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:13:02.879  INFO 12060 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:13:02.919  INFO 12060 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:13:03.320  INFO 12060 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 401ms
+2021-04-20 22:13:03.320  INFO 12060 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:13:03.456  INFO 12060 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 425ms
+2021-04-20 22:13:18.208  INFO 12060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:13:18.210  INFO 12060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:13:18.211  INFO 12060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:13:40.615  INFO 11244 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 11244 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:13:40.630  INFO 11244 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:13:40.662  INFO 11244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:13:40.662  INFO 11244 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:13:41.163  INFO 11244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:13:41.163  INFO 11244 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:13:41.619  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:13:41.619  INFO 11244 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:13:41.619  INFO 11244 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:13:41.682  INFO 11244 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:13:41.682  INFO 11244 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1020 ms
+2021-04-20 22:13:41.776  INFO 11244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:13:41.917  INFO 11244 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:13:41.917  INFO 11244 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:13:41.949  INFO 11244 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:13:41.980  INFO 11244 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:13:42.059  INFO 11244 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:13:42.137  INFO 11244 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:13:42.500  INFO 11244 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:13:42.500  INFO 11244 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:13:42.515  INFO 11244 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:13:42.641  WARN 11244 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:13:42.719  INFO 11244 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:13:42.816  WARN 11244 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:13:42.816  INFO 11244 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:13:42.829  INFO 11244 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:13:42.892  INFO 11244 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:13:42.892  INFO 11244 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 2.543 seconds (JVM running for 3.268)
+2021-04-20 22:13:42.892  INFO 11244 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:13:42.970  INFO 11244 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:13:42.986  INFO 11244 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:13:43.284  INFO 11244 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 298ms
+2021-04-20 22:13:43.284  INFO 11244 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:13:43.394  INFO 11244 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 314ms
+2021-04-20 22:13:48.065  INFO 11244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:13:48.065  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:13:48.065  INFO 11244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 22:17:39.054  INFO 14280 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 14280 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:17:39.054  INFO 14280 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:17:39.085  INFO 14280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:17:39.085  INFO 14280 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:17:39.618  INFO 14280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:17:39.634  INFO 14280 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:17:39.979  INFO 14280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:17:39.979  INFO 14280 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:17:39.995  INFO 14280 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:17:40.089  INFO 14280 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:17:40.089  INFO 14280 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2021-04-20 22:17:40.183  INFO 14280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:17:40.356  INFO 14280 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:17:40.356  INFO 14280 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:17:40.387  INFO 14280 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:17:40.418  INFO 14280 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:17:40.497  INFO 14280 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:17:40.575  INFO 14280 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:17:40.952  INFO 14280 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:17:40.954  INFO 14280 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:17:40.983  INFO 14280 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:17:41.124  WARN 14280 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:17:41.203  INFO 14280 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:17:41.297  WARN 14280 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:17:41.313  INFO 14280 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:17:41.313  INFO 14280 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:17:41.376  INFO 14280 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:17:41.391  INFO 14280 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 2.608 seconds (JVM running for 3.339)
+2021-04-20 22:17:41.391  INFO 14280 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:17:41.455  INFO 14280 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:17:41.485  INFO 14280 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:17:41.799  INFO 14280 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 314ms
+2021-04-20 22:17:41.799  INFO 14280 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:17:41.909  INFO 14280 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 329ms
+2021-04-20 22:17:52.622  INFO 14280 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:17:52.622  INFO 14280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:17:52.622  INFO 14280 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2021-04-20 22:19:43.915  INFO 10308 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 10308 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:19:43.931  INFO 10308 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:19:43.994  INFO 10308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:19:43.994  INFO 10308 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:19:44.668  INFO 10308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:19:44.684  INFO 10308 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:19:45.108  INFO 10308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:19:45.123  INFO 10308 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:19:45.123  INFO 10308 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:19:45.201  INFO 10308 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:19:45.201  INFO 10308 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
+2021-04-20 22:19:45.296  INFO 10308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:19:45.468  INFO 10308 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:19:45.484  INFO 10308 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:19:45.515  INFO 10308 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:19:45.546  INFO 10308 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:19:45.625  INFO 10308 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:19:45.704  INFO 10308 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:19:46.112  INFO 10308 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:19:46.112  INFO 10308 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:19:46.143  INFO 10308 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:19:46.300  WARN 10308 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:19:46.380  INFO 10308 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:19:46.380 DEBUG 10308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-20 22:19:46.427 DEBUG 10308 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2021-04-20 22:19:46.459 DEBUG 10308 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-20 22:19:46.459 DEBUG 10308 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-20 22:19:46.490  WARN 10308 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:19:46.490  INFO 10308 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:19:46.506  INFO 10308 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:19:46.568  INFO 10308 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:19:46.584  INFO 10308 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 3.003 seconds (JVM running for 3.814)
+2021-04-20 22:19:46.584  INFO 10308 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:19:46.663  INFO 10308 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:19:46.694  INFO 10308 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:19:47.071  INFO 10308 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 377ms
+2021-04-20 22:19:47.071  INFO 10308 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:19:47.212  INFO 10308 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 393ms
+2021-04-20 22:20:35.370  INFO 12500 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 12500 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:20:35.372  INFO 12500 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:20:35.410  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:20:35.410  INFO 12500 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:20:35.991  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:20:36.006  INFO 12500 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:20:36.397  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:20:36.404  INFO 12500 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:20:36.405  INFO 12500 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:20:36.522  INFO 12500 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:20:36.522  INFO 12500 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1111 ms
+2021-04-20 22:20:36.632  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:20:36.789  INFO 12500 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:20:36.789  INFO 12500 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:20:36.836  INFO 12500 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:20:36.871  INFO 12500 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:20:36.962  INFO 12500 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:20:37.040  INFO 12500 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:20:37.442  INFO 12500 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:20:37.442  INFO 12500 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:20:37.474  INFO 12500 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:20:37.721  WARN 12500 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:20:37.799  INFO 12500 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:20:37.815 DEBUG 12500 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-20 22:20:37.878 DEBUG 12500 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2021-04-20 22:20:37.894 DEBUG 12500 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-20 22:20:37.909 DEBUG 12500 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-20 22:20:37.940  WARN 12500 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:20:37.940  INFO 12500 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:20:37.956  INFO 12500 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:20:38.073  INFO 12500 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:20:38.082  INFO 12500 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 3.224 seconds (JVM running for 4.323)
+2021-04-20 22:20:38.082  INFO 12500 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:20:38.166  INFO 12500 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:20:38.191  INFO 12500 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:20:38.609  INFO 12500 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 418ms
+2021-04-20 22:20:38.609  INFO 12500 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:20:38.734  INFO 12500 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 431ms
+2021-04-20 22:20:47.571  INFO 12500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:20:47.572  INFO 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:20:47.573 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-04-20 22:20:47.573 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-04-20 22:20:47.573 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-04-20 22:20:47.574 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@14407a1
+2021-04-20 22:20:47.574 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4a7709a4
+2021-04-20 22:20:47.574 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-04-20 22:20:47.574  INFO 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:20:47.583 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-04-20 22:20:47.590 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-04-20 22:20:47.594 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-04-20 22:20:47.595 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-04-20 22:20:47.603 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-04-20 22:20:47.605 DEBUG 12500 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2021-04-20 22:20:47.629 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2021-04-20 22:20:47.633 DEBUG 12500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-04-20 22:25:18.094  INFO 14112 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 14112 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:25:18.094  INFO 14112 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:25:18.141  INFO 14112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:25:18.141  INFO 14112 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:25:18.739  INFO 14112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:25:18.755  INFO 14112 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:25:19.188  INFO 14112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:25:19.194  INFO 14112 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:25:19.194  INFO 14112 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:25:19.335  INFO 14112 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:25:19.335  INFO 14112 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2021-04-20 22:25:19.460  INFO 14112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:25:19.618  INFO 14112 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:25:19.618  INFO 14112 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:25:19.649  INFO 14112 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:25:19.696  INFO 14112 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:25:19.774  INFO 14112 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:25:19.853  INFO 14112 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:25:20.230  INFO 14112 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:25:20.230  INFO 14112 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:25:20.261  INFO 14112 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:25:20.404  WARN 14112 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:25:20.492  INFO 14112 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:25:20.499 DEBUG 14112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-20 22:25:20.546 DEBUG 14112 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 2 mappings in 'requestMappingHandlerMapping'
+2021-04-20 22:25:20.577 DEBUG 14112 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-20 22:25:20.577 DEBUG 14112 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-20 22:25:20.609  WARN 14112 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:25:20.609  INFO 14112 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:25:20.609  INFO 14112 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:25:20.687  INFO 14112 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:25:20.692  INFO 14112 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 2.975 seconds (JVM running for 4.188)
+2021-04-20 22:25:20.692  INFO 14112 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:25:20.781  INFO 14112 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:25:20.797  INFO 14112 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:25:21.158  INFO 14112 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 361ms
+2021-04-20 22:25:21.158  INFO 14112 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:25:21.283  INFO 14112 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 365ms
+2021-04-20 22:25:37.517  INFO 14112 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:25:37.519  INFO 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:25:37.519 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-04-20 22:25:37.519 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-04-20 22:25:37.519 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-04-20 22:25:37.520 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@2f62644
+2021-04-20 22:25:37.520 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@33d23ffb
+2021-04-20 22:25:37.520 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-04-20 22:25:37.520  INFO 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:25:37.530 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-04-20 22:25:37.537 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [Classpath [META-INF/resources/], Classpath [resources/], Classpath [static/], Classpath [public/], ServletContext [/]]
+2021-04-20 22:25:37.542 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2021-04-20 22:25:37.543 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2021-04-20 22:25:37.548 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2021-04-20 22:25:37.550 DEBUG 14112 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#errorHtml(HttpServletRequest, HttpServletResponse)
+2021-04-20 22:25:37.576 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, text/html;q=0.8]
+2021-04-20 22:25:37.580 DEBUG 14112 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2021-04-20 22:28:41.811  INFO 9032 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 9032 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:28:41.811  INFO 9032 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:28:41.874  INFO 9032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:28:41.874  INFO 9032 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:28:42.582  INFO 9032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:28:42.597  INFO 9032 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:28:42.990  INFO 9032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:28:43.008  INFO 9032 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:28:43.008  INFO 9032 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:28:43.132  INFO 9032 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:28:43.132  INFO 9032 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1258 ms
+2021-04-20 22:28:43.257  INFO 9032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:28:43.446  INFO 9032 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:28:43.446  INFO 9032 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:28:43.493  INFO 9032 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:28:43.524  INFO 9032 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:28:43.609  INFO 9032 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:28:43.681  INFO 9032 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:28:44.210  INFO 9032 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:28:44.215  INFO 9032 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:28:44.262  INFO 9032 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:28:44.421  WARN 9032 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:28:44.515  INFO 9032 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:28:44.530 DEBUG 9032 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-20 22:28:44.577 DEBUG 9032 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2021-04-20 22:28:44.608 DEBUG 9032 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-20 22:28:44.611 DEBUG 9032 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-20 22:28:44.656  WARN 9032 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:28:44.656  INFO 9032 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:28:44.671  INFO 9032 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:28:44.766  INFO 9032 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:28:44.781  INFO 9032 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 3.565 seconds (JVM running for 4.784)
+2021-04-20 22:28:44.781  INFO 9032 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:28:44.876  INFO 9032 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:28:44.912  INFO 9032 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:28:45.378  INFO 9032 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 466ms
+2021-04-20 22:28:45.378  INFO 9032 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:28:45.519  INFO 9032 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 487ms
+2021-04-20 22:28:54.711  INFO 9032 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:28:54.713  INFO 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:28:54.713 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-04-20 22:28:54.713 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-04-20 22:28:54.714 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-04-20 22:28:54.715 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@564e4c7f
+2021-04-20 22:28:54.715 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@1a4ff404
+2021-04-20 22:28:54.715 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-04-20 22:28:54.715  INFO 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-04-20 22:28:54.723 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-04-20 22:28:54.727 DEBUG 9032 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.kumar.ipldashboard.controller.LoginController#test()
+2021-04-20 22:28:54.734  INFO 9032 --- [http-nio-8080-exec-1] c.k.i.controller.LoginController         : Into login function
+2021-04-20 22:28:54.760 DEBUG 9032 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-04-20 22:28:54.760 DEBUG 9032 --- [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Loggin"]
+2021-04-20 22:28:54.768 DEBUG 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2021-04-20 22:31:29.563  INFO 12148 --- [restartedMain] c.k.i.IplDashboardApplication            : Starting IplDashboardApplication using Java 11.0.10 on Kambojs with PID 12148 (C:\Users\vinit\git\building-microservices\ipl-dashboard\target\classes started by vinit in C:\Users\vinit\git\building-microservices\ipl-dashboard)
+2021-04-20 22:31:29.579  INFO 12148 --- [restartedMain] c.k.i.IplDashboardApplication            : No active profile set, falling back to default profiles: default
+2021-04-20 22:31:29.615  INFO 12148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-04-20 22:31:29.615  INFO 12148 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-04-20 22:31:30.116  INFO 12148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-04-20 22:31:30.128  INFO 12148 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 JPA repository interfaces.
+2021-04-20 22:31:30.475  INFO 12148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-04-20 22:31:30.490  INFO 12148 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-20 22:31:30.490  INFO 12148 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-20 22:31:30.585  INFO 12148 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-20 22:31:30.585  INFO 12148 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 970 ms
+2021-04-20 22:31:30.679  INFO 12148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-04-20 22:31:30.821  INFO 12148 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (feature not supported)
+2021-04-20 22:31:30.836  INFO 12148 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-04-20 22:31:30.868  INFO 12148 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-04-20 22:31:30.883  INFO 12148 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.29.Final
+2021-04-20 22:31:30.977  INFO 12148 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-04-20 22:31:31.072  INFO 12148 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.HSQLDialect
+2021-04-20 22:31:31.448  INFO 12148 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-04-20 22:31:31.464  INFO 12148 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-04-20 22:31:31.480  INFO 12148 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-04-20 22:31:31.605  WARN 12148 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-04-20 22:31:31.684  INFO 12148 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-20 22:31:31.684 DEBUG 12148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2021-04-20 22:31:31.731 DEBUG 12148 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 3 mappings in 'requestMappingHandlerMapping'
+2021-04-20 22:31:31.747 DEBUG 12148 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2021-04-20 22:31:31.747 DEBUG 12148 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2021-04-20 22:31:31.778  WARN 12148 --- [restartedMain] o.s.b.a.batch.JpaBatchConfigurer         : JPA does not support custom isolation levels, so locks may not be taken when launching Jobs
+2021-04-20 22:31:31.778  INFO 12148 --- [restartedMain] o.s.b.c.r.s.JobRepositoryFactoryBean     : No database type set, using meta data indicating: HSQL
+2021-04-20 22:31:31.794  INFO 12148 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : No TaskExecutor has been set, defaulting to synchronous executor.
+2021-04-20 22:31:31.857  INFO 12148 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-20 22:31:31.857  INFO 12148 --- [restartedMain] c.k.i.IplDashboardApplication            : Started IplDashboardApplication in 2.607 seconds (JVM running for 3.454)
+2021-04-20 22:31:31.857  INFO 12148 --- [restartedMain] o.s.b.a.b.JobLauncherApplicationRunner   : Running default command line with: []
+2021-04-20 22:31:31.935  INFO 12148 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] launched with the following parameters: [{run.id=1}]
+2021-04-20 22:31:31.951  INFO 12148 --- [restartedMain] o.s.batch.core.job.SimpleStepHandler     : Executing step: [step1]
+2021-04-20 22:31:32.249  INFO 12148 --- [restartedMain] o.s.batch.core.step.AbstractStep         : Step: [step1] executed in 298ms
+2021-04-20 22:31:32.249  INFO 12148 --- [restartedMain] .k.i.d.JobCompletionNotificationListener : !!! JOB FINISHED! Time to verify the results
+2021-04-20 22:31:32.361  INFO 12148 --- [restartedMain] o.s.b.c.l.support.SimpleJobLauncher      : Job: [FlowJob: [name=importUserJob]] completed with the following parameters: [{run.id=1}] and the following status: [COMPLETED] in 298ms
+2021-04-20 22:31:37.508  INFO 12148 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-04-20 22:31:37.509  INFO 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-04-20 22:31:37.509 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2021-04-20 22:31:37.509 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2021-04-20 22:31:37.509 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2021-04-20 22:31:37.510 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@30423520
+2021-04-20 22:31:37.510 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@12de6515
+2021-04-20 22:31:37.510 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2021-04-20 22:31:37.510  INFO 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2021-04-20 22:31:37.516 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2021-04-20 22:31:37.519 DEBUG 12148 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.kumar.ipldashboard.controller.LoginController#test()
+2021-04-20 22:31:37.527  INFO 12148 --- [http-nio-8080-exec-3] c.k.i.controller.LoginController         : Into login function
+2021-04-20 22:31:37.537 DEBUG 12148 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Using 'text/html', given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2021-04-20 22:31:37.537 DEBUG 12148 --- [http-nio-8080-exec-3] m.m.a.RequestResponseBodyMethodProcessor : Writing ["Loggin"]
+2021-04-20 22:31:37.542 DEBUG 12148 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
