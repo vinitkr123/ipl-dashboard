@@ -1,9 +1,9 @@
 import {React} from 'react';
 
-export const MatchSmallCard = () => {
+export const MatchSmallCard = ({match}) => {
     return (
         <div className="TeamPage">
-           <p>Match Small Card           </p></div>
+           <p>{match.city} vs {match.city}</p></div>
     );
 }
 
